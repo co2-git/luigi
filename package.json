@@ -1,0 +1,22 @@
+{
+  "name": "luigi",
+  "version": "0.0.0",
+  "description": "Slim HTML5 Template Manager",
+  "main": "luigi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "bin/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/co2-git/luigi"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/co2-git/luigi/issues"
+  },
+  "devDependencies": {
+    "prontojs": "git://github.com/co2-git/prontojs"
+  }
+}
