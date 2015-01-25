@@ -50,3 +50,21 @@ bower install luigi
 
 </script>
 
+<!-- You can also use URLs using the src attribute -->
+<script type="text/html" id="my-template-url" src="/template.html"></script>
+
+<script>
+
+	// Same as above but will get template via URL
+	
+	luigi('my-template-url', function (error, view) {
+		if ( error ) {
+			return $('div').text(error.message);
+		}
+
+		$('div').empty().append(view);
+	});
+
+</script>
+
+```
