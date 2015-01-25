@@ -3,7 +3,7 @@
  *  @licence MIT
  */
 
-! function (di) {
+! function (context) {
 
   'use strict';
 
@@ -71,6 +71,14 @@
 
   // export
 
-  di.luigi = luigi;
+  if ( typeof module !== 'undefined' && module.exports ) {
+    module.exports = luigi;
+  }
 
-} ((typeof module !== 'undefined' && module.exports) || window);
+  // window
+  
+  else if ( typeof window !== 'undefined' ) {
+    window.luigi = luigi;
+  }
+
+} (this);
